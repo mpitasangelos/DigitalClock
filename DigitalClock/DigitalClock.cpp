@@ -17,7 +17,6 @@ int main() {
 		if (s > 59) {
 			m++;
 			s = 0;
-
 		}
 		if (m > 59) {
 			h++;
@@ -28,7 +27,7 @@ int main() {
 		}
 		printf("\n Clock :");
 		printf("\n %02d:%02d:%02d", h, m, s); //write time in 00:00:00 format
-		Sleep(d);
-		system("cls");
+		Sleep(d); //slow down code to make it work like a real clock
+		system("cls"); //clear screen
 	} 
 }
